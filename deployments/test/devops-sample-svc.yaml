@@ -25,6 +25,7 @@ metadata:
   name: ks-sample-dev
 spec:
   rules:
+  # 根据部署运行时集群的IP地址，替换host的域名。将“119-8-58-20”替换为部署运行时集群的访问IP，支持以“.”或者“-”字符替换IP的连接符以表示域名。
   - host: devops-sample.119-8-58-20.nip.io
     http:
       paths:
